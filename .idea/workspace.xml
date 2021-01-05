@@ -1,32 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02d5655b-40a5-45df-a1f2-0f501a663c7d" name="Default Changelist" comment="Test">
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/project-name.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nest-cli.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Control/control_Module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Control/prin_Controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Contracts/financial_Services_Intefrace.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Entity/bank_Account.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Entity/financial_Movement.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Entity/saving_Account.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Domain/Entity/transaction.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/app.e2e-spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/jest-e2e.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.build.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    <list default="true" id="02d5655b-40a5-45df-a1f2-0f501a663c7d" name="Default Changelist" comment="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Domain/Entity/current_Account.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,8 +74,16 @@
       <updated>1609274130954</updated>
       <workItem from="1609274137378" duration="2669000" />
       <workItem from="1609790925463" duration="3018000" />
-      <workItem from="1609863247362" duration="2448000" />
+      <workItem from="1609863247362" duration="6747000" />
     </task>
+    <task id="LOCAL-00001" summary="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).">
+      <created>1609865907081</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609865907081</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +114,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test" />
+    <MESSAGE value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro)." />
+    <MESSAGE value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente)." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente)." />
   </component>
 </project>
