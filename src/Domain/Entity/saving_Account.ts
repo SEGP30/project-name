@@ -1,17 +1,7 @@
 import { Bank_Account } from "./bank_Account";
-import { Financial_Movement } from "./financial_Movement";
 import { Transaction } from "./transaction";
 
 export class Saving_Account extends Bank_Account {
-
-  public movements:Financial_Movement[];
-
-  constructor() {
-
-    super();
-    this.movements = []
-
-  }
 
   public consing(transaction: Transaction) {
     this.validateDifferentCityDiscount(transaction);
@@ -27,7 +17,7 @@ export class Saving_Account extends Bank_Account {
       transaction.value += 5000;
 
     if(this.validateMinBalance(transaction.value))
-      super.remove(transaction);
+      this.balance -= transaction.value;
   }
 
   validateFirstMovements(){
