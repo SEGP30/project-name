@@ -1,8 +1,8 @@
-import { Financial_Services_Intefrace } from "../Contracts/financial_Services_Intefrace";
+import { Ifinancial_Services } from "../Contracts/Ifinancial_Services";
 import { Transaction } from "./transaction";
 import { Financial_Movement } from "./financial_Movement";
 
-export abstract class Bank_Account implements Financial_Services_Intefrace{
+export abstract class Bank_Account implements Ifinancial_Services{
 
   public number: string;
   public balance: number;
@@ -29,7 +29,7 @@ export abstract class Bank_Account implements Financial_Services_Intefrace{
 
   public abstract remove(transaction: Transaction);
 
-  public transfer(transaction: Transaction, account: Financial_Services_Intefrace){
+  public transfer(transaction: Transaction, account: Ifinancial_Services){
     //TODO: VALIDAR SI PUEDE RETIRAR PRIMERO
     this.remove(transaction);
     account.consing(transaction);

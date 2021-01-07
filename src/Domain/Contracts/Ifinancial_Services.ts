@@ -1,9 +1,9 @@
 import { Transaction } from "../Entity/transaction";
 
-export interface Financial_Services_Intefrace{
+export interface Ifinancial_Services {
 
   consing(transaction: Transaction);
-  transfer(transaction: Transaction, account: Financial_Services_Intefrace);
+  transfer(transaction: Transaction, account: Ifinancial_Services);
   remove(transaction: Transaction);
 
 }

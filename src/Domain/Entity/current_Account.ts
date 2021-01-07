@@ -1,5 +1,6 @@
 import { Bank_Account } from "./bank_Account";
 import { Transaction } from "./transaction";
+import { Financial_Movement } from "./financial_Movement";
 
 
 export class Current_Account extends Bank_Account{
@@ -16,12 +17,16 @@ export class Current_Account extends Bank_Account{
 
   }
 
-  public remove(transaction: Transaction){
-
+  public remove(transaction){
     let new_Balance: number = this.balance - this.tax_4X1000(transaction.value);
-    if(new_Balance >= this.overdraft)
+    if(new_Balance >= this.overdraft){
       this.balance -= transaction.value;
-
+      let new_Movement = new Financial_Movement();
+      new_Movement.type = 'Retiro';
+      new_Movement.date = new Date();
+      new_Movement.value = transaction.value;
+      this.movements.push(new_Movement);
+    }
   }
 
   validateFirstMovements(){

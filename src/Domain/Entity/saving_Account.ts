@@ -1,5 +1,6 @@
 import { Bank_Account } from "./bank_Account";
 import { Transaction } from "./transaction";
+import { Financial_Movement } from "./financial_Movement";
 
 export class Saving_Account extends Bank_Account {
 
@@ -16,8 +17,14 @@ export class Saving_Account extends Bank_Account {
     if(this.validateRemoveByMonth())
       transaction.value += 5000;
 
-    if(this.validateMinBalance(transaction.value))
+    if(this.validateMinBalance(transaction.value)){
       this.balance -= transaction.value;
+      let new_Movement = new Financial_Movement();
+      new_Movement.type = 'Retiro';
+      new_Movement.date = new Date();
+      new_Movement.value = transaction.value;
+      this.movements.push(new_Movement);
+    }
   }
 
   validateFirstMovements(){
