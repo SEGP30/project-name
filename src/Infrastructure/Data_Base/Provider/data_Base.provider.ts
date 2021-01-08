@@ -1,6 +1,6 @@
 import {createConnection} from "typeorm";
 
-export const databaseProviders = [
+export const database_Providers = [
   {
     provide: 'DATABASE_CONNECTION',
     useFactory: async () => await createConnection({
@@ -10,7 +10,7 @@ export const databaseProviders = [
       synchronize: true,
       useNewUrlParser: true,
       ssl: true,
-      entities: ['dist/Infra/Data_Base/Orm/*.js']
+      entities: ['dist/Infrastructure/Data_Base/Orm/*.js']
     })
   }
 ]

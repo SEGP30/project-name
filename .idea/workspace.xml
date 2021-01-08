@@ -1,26 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02d5655b-40a5-45df-a1f2-0f501a663c7d" name="Default Changelist" comment="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).">
-      <change afterPath="$PROJECT_DIR$/src/Infra/Base/generic_Repository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infra/Base/unit_Of_Work.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infra/Contracts/Iunit_Of_Work.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infra/Data_Base/Migrations/entity_Provider.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infra/Data_Base/Orm/current_Account.orm.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infra/Data_Base/Orm/saving_Account.orm.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infra/Data_Base/Provider/data_Base.provider.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infra/Data_Base/data_Base.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infra/Repositories/current_Account.repository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infra/Repositories/saving_Account.repository.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Infra/infrastructure.module.ts" afterDir="false" />
+    <list default="true" id="02d5655b-40a5-45df-a1f2-0f501a663c7d" name="Default Changelist" comment="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado.">
+      <change afterPath="$PROJECT_DIR$/src/Application/application_Module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/current_Account/register_Current_Account.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Application/saving_Account/register_Saving_Account.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/current_Account.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/saving_Account.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Base/generic.repository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Repositories/current_Account.repository.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Infrastructure/Repositories/saving_Account.repository.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Contracts/financial_Services_Intefrace.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Contracts/Ifinancial_Services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Control/control_Module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/controller.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Control/prin_Controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/principal.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Domain/Entity/bank_Account.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entity/bank_Account.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Entity/current_Account.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entity/current_Account.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Domain/Entity/saving_Account.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entity/saving_Account.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/Domain/bank_Account.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/Domain/bank_Account.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/Base/generic_Repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/Base/unit_Of_Work.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Base/unit_Of_Work.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/Contracts/Iunit_Of_Work.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Contracts/Iunit_Of_Work.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/Data_Base/Migrations/entity_Provider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data_Base/Migrations/entity_Provider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/Data_Base/Orm/current_Account.orm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data_Base/Orm/current_Account.orm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/Data_Base/Orm/saving_Account.orm.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data_Base/Orm/saving_Account.orm.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/Data_Base/Provider/data_Base.provider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data_Base/Provider/data_Base.provider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/Data_Base/data_Base.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data_Base/data_Base.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/Repositories/current_Account.repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/Repositories/saving_Account.repository.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Infra/infrastructure.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/infrastructure.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/app.e2e-spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/app.e2e-spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,21 +116,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Bank account tests.Current account.Wrong consign" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/test/Domain/bank_Account.test.ts" />
-      <test-names>
-        <test-name value="Bank account tests" />
-        <test-name value="Current account" />
-        <test-name value="Wrong consign" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="Bank account tests.Saving account.Next consign correct, different city" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -139,13 +131,23 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="start:dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start:dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start:dev" />
         <item itemvalue="Jest.Bank account tests" />
         <item itemvalue="Jest.Bank account tests.Current account.Next consign correct" />
         <item itemvalue="Jest.Bank account tests.Current account.Next consign correct, different city" />
         <item itemvalue="Jest.Bank account tests.Saving account.Next consign correct, different city" />
-        <item itemvalue="Jest.Bank account tests.Current account.Wrong consign" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +166,9 @@
       <workItem from="1609879471856" duration="4588000" />
       <workItem from="1609950016519" duration="7196000" />
       <workItem from="1609963837163" duration="8116000" />
-      <workItem from="1610050351708" duration="8341000" />
+      <workItem from="1610050351708" duration="8561000" />
+      <workItem from="1610136922786" duration="4168000" />
+      <workItem from="1610141132098" duration="3970000" />
     </task>
     <task id="LOCAL-00001" summary="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).">
       <created>1609865907081</created>
@@ -187,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1609968159124</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado.">
+      <created>1610059053552</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1610059053552</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +233,7 @@
     <MESSAGE value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro)." />
     <MESSAGE value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente)." />
     <MESSAGE value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro)." />
+    <MESSAGE value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado." />
   </component>
 </project>

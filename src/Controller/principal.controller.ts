@@ -1,7 +1,7 @@
 import { Controller, Get } from "@nestjs/common";
 
 @Controller ('principal')
-export class Prin_Controller{
+export class Principal_Controller {
 
   @Get()
   getRequest(){

@@ -1,9 +1,11 @@
 import { Ifinancial_Services } from "../Contracts/Ifinancial_Services";
 import { Transaction } from "./transaction";
 import { Financial_Movement } from "./financial_Movement";
+import { ObjectID } from "typeorm";
 
 export abstract class Bank_Account implements Ifinancial_Services{
 
+  public _id: ObjectID;
   public number: string;
   public balance: number;
   public ownerId: string;

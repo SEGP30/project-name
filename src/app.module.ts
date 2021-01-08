@@ -1,10 +1,13 @@
 import { Module } from '@nestjs/common';
-
-import { Control_Module } from "./Control/control_Module";
+import { Controller_Module } from "./Controller/controller.module";
+import { Application_Module } from "./Application/application_Module";
+import { Infrastructure_Module } from "./Infrastructure/infrastructure.module";
 
 @Module({
   imports: [
-    Control_Module
+    Application_Module,
+    Controller_Module,
+    Infrastructure_Module
   ],
 })
-export class AppModule {}
+export class App_Module {}
