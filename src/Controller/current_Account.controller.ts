@@ -4,6 +4,14 @@ import {
   Register_Current_Account_Request,
   Register_Current_Account_Service
 } from "../Application/current_Account/register_Current_Account.service";
+import {
+  Consign_Current_Account_Request,
+  Consign_Current_Account_Service
+} from "../Application/current_Account/consign_Current_Account.service";
+import {
+  Remove_Current_Account_Request,
+  Remove_Current_Account_Service
+} from "../Application/current_Account/remove_Current_Account.service";
 
 @Controller('current_Account')
 export class Current_Account_Controller{
@@ -18,5 +26,24 @@ export class Current_Account_Controller{
     return await service.execute(request);
 
   }
+
+  @Post()
+  async consing_Current_Account(@Body() request: Consign_Current_Account_Request) {
+
+    const service: Consign_Current_Account_Service = new Consign_Current_Account_Service(this.unit_Of_Work);
+
+    return await service.execute(request);
+
+  }
+
+  @Post()
+  async remove_Current_Account(@Body() request: Remove_Current_Account_Request) {
+
+    const service: Remove_Current_Account_Service = new Remove_Current_Account_Service(this.unit_Of_Work);
+
+    return await service.execute(request);
+
+  }
+
 
 }

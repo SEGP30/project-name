@@ -10,6 +10,7 @@ export const database_Providers = [
       synchronize: true,
       useNewUrlParser: true,
       ssl: true,
+      useUnifiedTopology: true,
       entities: ['dist/Infrastructure/Data_Base/Orm/*.js']
     })
   }

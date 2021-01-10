@@ -24,6 +24,8 @@ export class Register_Saving_Account_Service {
         const first_Transaction: Transaction = new Transaction();
 
         first_Transaction.value = request.first_Consing_Value;
+        first_Transaction.city = request.transaction_City;
+
         new_Account.consing(first_Transaction);
 
         if(new_Account.balance > 0){
@@ -61,6 +63,7 @@ export class Register_Saving_Account_Request {
     public readonly number: string,
     public readonly owner_ID: string,
     public readonly city: string,
+    public readonly transaction_City: string,
     public readonly first_Consing_Value: number
   ) {
   }

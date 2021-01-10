@@ -10,7 +10,7 @@ export abstract class Bank_Account implements Ifinancial_Services{
   public balance: number;
   public ownerId: string;
   public city: string;
-  public movements:Financial_Movement[];
+  public movements: Financial_Movement[];
 
   constructor() {
 
