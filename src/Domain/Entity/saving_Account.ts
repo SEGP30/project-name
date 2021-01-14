@@ -4,12 +4,12 @@ import { Financial_Movement } from "./financial_Movement";
 
 export class Saving_Account extends Bank_Account {
 
-  public consing(transaction: Transaction) {
+  public consign(transaction: Transaction) {
     this.validateDifferentCityDiscount(transaction);
     if(this.validateFirstMovements() && transaction.value >= 50000){
-      super.consing(transaction);
+      super.consign(transaction);
     }else if(!this.validateFirstMovements() && transaction.value > 0){
-      super.consing(transaction);
+      super.consign(transaction);
     }
   }
 

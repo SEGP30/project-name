@@ -21,7 +21,7 @@ describe('Bank account tests', () => {
       const new_Transaction: Transaction = new Transaction();
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = -50000;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       expect(bank_Account.balance).toBe(0);
     });
 
@@ -29,7 +29,7 @@ describe('Bank account tests', () => {
       const new_Transaction: Transaction = new Transaction();
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 50000;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       expect(bank_Account.balance).toBe(50000);
     });
 
@@ -37,7 +37,7 @@ describe('Bank account tests', () => {
       const new_Transaction: Transaction = new Transaction();
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 49950;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       expect(bank_Account.balance).toBe(0);
     });
 
@@ -46,13 +46,13 @@ describe('Bank account tests', () => {
       const new_Transaction: Transaction = new Transaction();
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 50000;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 20000;
       bank_Account.remove(new_Transaction);
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 49950;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       expect(bank_Account.balance).toBe(79950);
     });
 
@@ -61,13 +61,13 @@ describe('Bank account tests', () => {
       const new_Transaction: Transaction = new Transaction();
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 50000;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 20000;
       bank_Account.remove(new_Transaction);
       new_Transaction.city = 'Bogota';
       new_Transaction.value = 49950;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       expect(bank_Account.balance).toBe(69950);
     });
 
@@ -87,7 +87,7 @@ describe('Bank account tests', () => {
       const new_Transaction: Transaction = new Transaction();
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = -50000;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       expect(bank_Account.balance).toBe(0);
     });
 
@@ -95,7 +95,7 @@ describe('Bank account tests', () => {
       const new_Transaction: Transaction = new Transaction();
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 500000;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       expect(bank_Account.balance).toBe(500000);
     });
 
@@ -103,7 +103,7 @@ describe('Bank account tests', () => {
       const new_Transaction: Transaction = new Transaction();
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 99950;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       expect(bank_Account.balance).toBe(0);
     });
 
@@ -112,13 +112,13 @@ describe('Bank account tests', () => {
       const new_Transaction: Transaction = new Transaction();
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 300000;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 200000;
       bank_Account.remove(new_Transaction);
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 50000;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       expect(bank_Account.balance).toBe(150000);
     });
 
@@ -127,13 +127,13 @@ describe('Bank account tests', () => {
       const new_Transaction: Transaction = new Transaction();
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 500000;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       new_Transaction.city = 'Valledupar';
       new_Transaction.value = 200000;
       bank_Account.remove(new_Transaction);
       new_Transaction.city = 'Bogota';
       new_Transaction.value = 499950;
-      bank_Account.consing(new_Transaction);
+      bank_Account.consign(new_Transaction);
       expect(bank_Account.balance).toBe(799950);
     });
 

@@ -8,12 +8,12 @@ export class Current_Account extends Bank_Account{
   private readonly overdraft: number = -20000;
   private readonly minimal_First_Consign: number = 100000;
 
-  public consing(transaction: Transaction){
+  public consign(transaction: Transaction){
 
     if(this.validateFirstMovements() && transaction.value >= this.minimal_First_Consign){
-      super.consing(transaction);
+      super.consign(transaction);
     } else if(!this.validateFirstMovements() && transaction.value > 0)
-      super.consing(transaction);
+      super.consign(transaction);
 
   }
 

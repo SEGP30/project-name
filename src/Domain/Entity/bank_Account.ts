@@ -14,11 +14,12 @@ export abstract class Bank_Account implements Ifinancial_Services{
 
   constructor() {
 
+    this.balance = 0;
     this.movements = []
 
   }
 
-  public consing(transaction: Transaction) {
+  public consign(transaction: Transaction) {
 
     let new_Movement = new Financial_Movement();
     new_Movement.type = 'Consignacion';
@@ -34,7 +35,7 @@ export abstract class Bank_Account implements Ifinancial_Services{
   public transfer(transaction: Transaction, account: Ifinancial_Services){
     //TODO: VALIDAR SI PUEDE RETIRAR PRIMERO
     this.remove(transaction);
-    account.consing(transaction);
+    account.consign(transaction);
 
   };
 

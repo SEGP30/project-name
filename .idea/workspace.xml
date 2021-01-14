@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02d5655b-40a5-45df-a1f2-0f501a663c7d" name="Default Changelist" comment="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado.&#10;&#10;Se realizan los servicios de la capa de aplicación, módulos, controladores y se realiza el enlazado con la base de datos. Cambio de version del paquete typeorm en package.json. (Presenta aún error).">
-      <change afterPath="$PROJECT_DIR$/src/Application/current_Account/consign_Current_Account.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/current_Account/remove_Current_Account.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/saving_Account/consign_Saving_Account.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Application/saving_Account/remove_Saving_Account.service.ts" afterDir="false" />
+    <list default="true" id="02d5655b-40a5-45df-a1f2-0f501a663c7d" name="Default Changelist" comment="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado.&#10;&#10;Se realizan los servicios de la capa de aplicación (registrar), módulos, controladores y se realiza el enlazado con la base de datos. Cambio de version del paquete typeorm en package.json.&#10;&#10;Se realizan lo servicios de la capa de aplicación (consignar y retirar) y las implementaciones de sus respectivos controladores.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application/application_Module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/application_Module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/current_Account/consign_Current_Account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/current_Account/consign_Current_Account.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/current_Account/register_Current_Account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/current_Account/register_Current_Account.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application/saving_Account/consign_Saving_Account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/saving_Account/consign_Saving_Account.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Application/saving_Account/register_Saving_Account.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Application/saving_Account/register_Saving_Account.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/current_Account.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/current_Account.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/saving_Account.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/saving_Account.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Contracts/Ifinancial_Services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Contracts/Ifinancial_Services.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Domain/Entity/bank_Account.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entity/bank_Account.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Infrastructure/Data_Base/Provider/data_Base.provider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Infrastructure/Data_Base/Provider/data_Base.provider.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Entity/current_Account.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entity/current_Account.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Domain/Entity/saving_Account.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Domain/Entity/saving_Account.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/Domain/bank_Account.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/test/Domain/bank_Account.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +57,7 @@
     <property name="ts.external.directory.path" value="D:\Nueva carpeta\Universidad\Codigos\Proyecto Web\project-name\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Jest.Bank account tests">
+  <component name="RunManager" selected="npm.start:dev">
     <configuration name="Bank account tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -158,7 +155,9 @@
       <workItem from="1610136922786" duration="4168000" />
       <workItem from="1610141132098" duration="4163000" />
       <workItem from="1610209536464" duration="1512000" />
-      <workItem from="1610293512326" duration="11108000" />
+      <workItem from="1610293512326" duration="13560000" />
+      <workItem from="1610396907176" duration="249000" />
+      <workItem from="1610647465214" duration="3028000" />
     </task>
     <task id="LOCAL-00001" summary="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).">
       <created>1609865907081</created>
@@ -202,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610209841694</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado.&#10;&#10;Se realizan los servicios de la capa de aplicación (registrar), módulos, controladores y se realiza el enlazado con la base de datos. Cambio de version del paquete typeorm en package.json.&#10;&#10;Se realizan lo servicios de la capa de aplicación (consignar y retirar) y las implementaciones de sus respectivos controladores.">
+      <created>1610304986922</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610304986922</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +246,37 @@
     <MESSAGE value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado." />
     <MESSAGE value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado.&#10;&#10;Se realizan los servicios de la capa de aplicación, módulos, controladores y se realiza el enlazado con la base de datos." />
     <MESSAGE value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado.&#10;&#10;Se realizan los servicios de la capa de aplicación, módulos, controladores y se realiza el enlazado con la base de datos. Cambio de version del paquete typeorm en package.json. (Presenta aún error)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado.&#10;&#10;Se realizan los servicios de la capa de aplicación, módulos, controladores y se realiza el enlazado con la base de datos. Cambio de version del paquete typeorm en package.json. (Presenta aún error)." />
+    <MESSAGE value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado.&#10;&#10;Se realizan los servicios de la capa de aplicación (registrar), módulos, controladores y se realiza el enlazado con la base de datos. Cambio de version del paquete typeorm en package.json.&#10;&#10;Se realizan lo servicios de la capa de aplicación (consignar y retirar) y las implementaciones de sus respectivos controladores." />
+    <option name="LAST_COMMIT_MESSAGE" value="Se desarrolla el dominio para los servicios financieros.&#10;&#10;Se desarrrolló la lógica para las cuentas bancarias (Ahorro).&#10;&#10;Se desarrolló la lógica para las cuentas bancarias (Corriente).&#10;&#10;Ajustes en métodos y atributos de las cuentas bancarias (Abstracta, Ahorro y Corriente) e implementación de test para cuentas (Corriente y Ahorro).&#10;&#10;Construcción de la capa de infraestructura (con módulos de base de datos e infraestructura) con su funcionamiento de encapsulado.&#10;&#10;Se realizan los servicios de la capa de aplicación (registrar), módulos, controladores y se realiza el enlazado con la base de datos. Cambio de version del paquete typeorm en package.json.&#10;&#10;Se realizan lo servicios de la capa de aplicación (consignar y retirar) y las implementaciones de sus respectivos controladores." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Application/saving_Account/register_Saving_Account.service.ts</url>
+          <line>13</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Controller/current_Account.controller.ts</url>
+          <line>23</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Controller/saving_Account.controller.ts</url>
+          <line>23</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Application/current_Account/register_Current_Account.service.ts</url>
+          <line>14</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -2,6 +2,7 @@ import { Unit_Of_Work } from "../../Infrastructure/Base/unit_Of_Work";
 import { Bank_Account } from "../../Domain/Entity/bank_Account";
 import { Current_Account } from "../../Domain/Entity/current_Account";
 import { Transaction } from "../../Domain/Entity/transaction";
+import { ParseIntPipe } from "@nestjs/common";
 
 export class Register_Current_Account_Service {
 
@@ -23,8 +24,9 @@ export class Register_Current_Account_Service {
 
         const first_Transaction: Transaction = new Transaction();
 
-        first_Transaction.value = request.first_Consing_Value;
-        new_Account.consing(first_Transaction);
+        first_Transaction.value = parseInt(request.first_Consign_Value.toString());
+        first_Transaction.city = request.city;
+        new_Account.consign(first_Transaction);
 
         if(new_Account.balance > 0){
 
@@ -61,7 +63,7 @@ export class Register_Current_Account_Request {
     public readonly number: string,
     public readonly owner_ID: string,
     public readonly city: string,
-    public readonly first_Consing_Value: number
+    public readonly first_Consign_Value: number
   ) {
   }
 

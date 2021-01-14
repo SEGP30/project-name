@@ -23,7 +23,7 @@ export class Consign_Current_Account_Service{
 
       transaction.value = request.value;
 
-      account_Searched.consing(transaction);
+      account_Searched.consign(transaction);
 
       if(account_Searched.balance == balance){
 

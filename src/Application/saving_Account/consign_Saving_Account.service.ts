@@ -25,7 +25,7 @@ export class Consign_Saving_Account_Service{
       transaction.value = request.value;
       transaction.city = request.city;
 
-      account_Searched.consing(transaction);
+      account_Searched.consign(transaction);
 
       if(account_Searched.balance == balance){
 
