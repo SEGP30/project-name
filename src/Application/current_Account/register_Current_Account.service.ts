@@ -2,7 +2,7 @@ import { Unit_Of_Work } from "../../Infrastructure/Base/unit_Of_Work";
 import { Bank_Account } from "../../Domain/Entity/bank_Account";
 import { Current_Account } from "../../Domain/Entity/current_Account";
 import { Transaction } from "../../Domain/Entity/transaction";
-import { ParseIntPipe } from "@nestjs/common";
+import { Current_Account_Repository } from "../../Infrastructure/Repositories/current_Account.repository";
 
 export class Register_Current_Account_Service {
 
@@ -31,7 +31,7 @@ export class Register_Current_Account_Service {
         if(new_Account.balance > 0){
 
           await this.unit_Of_Work.start();
-          const saved_Account = await this.unit_Of_Work.current_Account_Repository.save(new_Account);
+          const saved_Account = await this.unit_Of_Work.current_Account_Repository.save(Current_Account_Repository.map_Entity_To_Orm(new_Account));
 
           if(saved_Account != undefined){
 

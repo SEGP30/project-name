@@ -2,6 +2,7 @@ import { Unit_Of_Work } from "../../Infrastructure/Base/unit_Of_Work";
 import { Bank_Account } from "../../Domain/Entity/bank_Account";
 import { Transaction } from "../../Domain/Entity/transaction";
 import { Saving_Account } from "../../Domain/Entity/saving_Account";
+import { Saving_Account_Repository } from "../../Infrastructure/Repositories/saving_Account.repository";
 
 export class Register_Saving_Account_Service {
 
@@ -31,7 +32,7 @@ export class Register_Saving_Account_Service {
         if(new_Account.balance > 0){
 
           await this.unit_Of_Work.start();
-          const saved_Account = await this.unit_Of_Work.saving_Account_Repository.save(new_Account);
+          const saved_Account = await this.unit_Of_Work.saving_Account_Repository.save(Saving_Account_Repository.map_Entity_To_Orm(new_Account));
 
           if(saved_Account != undefined){
 

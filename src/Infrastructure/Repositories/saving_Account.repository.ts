@@ -7,7 +7,7 @@ import { Saving_Account } from "../../Domain/Entity/saving_Account";
 
 @Injectable()
 @EntityRepository(Saving_Account_Orm)
-export class Saving_AccountRepository extends Generic_Repository<Saving_Account_Orm>{
+export class Saving_Account_Repository extends Generic_Repository<Saving_Account_Orm>{
 
   public map_Orm_To_Entity(orm: Saving_Account_Orm): Bank_Account{
 
@@ -21,6 +21,20 @@ export class Saving_AccountRepository extends Generic_Repository<Saving_Account_
     account.movements = orm.movements;
 
     return account;
+
+  }
+
+  public static map_Entity_To_Orm(entity: Bank_Account): Saving_Account_Orm{
+
+    const orm: Saving_Account_Orm = new Saving_Account_Orm();
+    orm._id = entity._id;
+    orm.number = entity.number;
+    orm.ownerId = entity.ownerId;
+    orm.city = entity.city;
+    orm.balance = entity.balance == undefined ? 0 : entity.balance;
+    orm.movements = entity.movements;
+
+    return orm;
 
   }
 
